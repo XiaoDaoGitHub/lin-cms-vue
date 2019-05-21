@@ -32,6 +32,8 @@ Vue.component('sticky-top', StickyTop)
 Vue.component('l-icon', LIcon)
 Vue.component('source-code', SourceCode)
 
+
+//test
 Vue.use(GlobalMixin)
 Vue.use(AuthorizeDirective)
 Vue.prototype.$XLSX = Window.XLSX
