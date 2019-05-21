@@ -11,7 +11,10 @@
             <a href="https://github.com/TaleLin/lin-cms-vue" target="block">前端仓库</a>
           </span>
           <span>
-            <a href="https://github.com/TaleLin/lin-cms-flask" target="block">后端仓库</a>
+            <a href="https://github.com/TaleLin/lin-cms-flask" target="block">后端仓库(flask)</a>
+          </span>
+          <span>
+            <a href="https://github.com/TaleLin/lin-cms-koa" target="block">后端仓库(koa)</a>
           </span>
         </p>
       </div>
@@ -40,6 +43,7 @@
                   <li>凉面</li>
                   <li>圈圈</li>
                   <li>家乐</li>
+                  <li>jokky</li>
                 </ul>
               </span>
             </li>
@@ -74,7 +78,7 @@
   .header {
     width: 100%;
     height: 180px;
-    background-color: #F3F6FF;
+    background-color: #E9F0FF;
     background-image: url('../../assets/img/about/header-bg.png');
     background-position: 100%;
     background-repeat: no-repeat;
@@ -120,7 +124,6 @@
         line-height: 20px;
         font-size: 14px;
         color: #8C98AE;
-        font-family: 'PingFangSC-Regular';
 
         span {
           color: $theme;
@@ -139,7 +142,7 @@
 
     .team-detail {
       position: relative;
-      background-color: #F3F6FF;
+      background-color: #E9F0FF;
       width: 600px;
       height: 100%;
 
@@ -181,13 +184,11 @@
               display: inline-block;
               width: 30px;
               margin-right: 15px;
-              font-family: 'PingFangSC-Regular';
               font-weight: 400;
               color: #45526B;
             }
 
             .team-name {
-              font-family: 'PingFangSC-Regular';
               font-weight: 400;
               color: #8C98AE;
 
@@ -231,7 +232,7 @@
       flex: 1;
       flex-direction: column;
       justify-content: center;
-      background-color: #F3F6FF;
+      background-color: #E9F0FF;
       height: 100%;
 
       .official-account-box {
@@ -245,11 +246,11 @@
         }
 
         p {
-          height: 20xp;
+          height: 20px;
           line-height: 20px;
           margin-top: 10px;
           font-size: 14px;
-          font-weight: 400px;
+          font-weight: 400;
           color: #45526B;
         }
       }

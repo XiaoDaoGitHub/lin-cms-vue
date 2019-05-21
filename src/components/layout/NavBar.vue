@@ -1,3 +1,4 @@
+
 <template>
   <div class="app-nav-bar">
 
@@ -6,6 +7,7 @@
       <!-- 暂时放这里 -->
       <div class="right-info">
         <notify v-auth="'消息推送'" v-show="false" />
+        <screenfull />
         <user></user>
       </div>
     </div>
@@ -15,6 +17,7 @@
 <script>
 import Notify from '@/components/notify/notify'
 import Breadcrumb from './Breadcrumb'
+import Screenfull from './Screenfull'
 import User from './User'
 
 export default {
@@ -24,6 +27,7 @@ export default {
     Breadcrumb,
     User,
     Notify,
+    Screenfull,
   },
 }
 </script>
@@ -32,16 +36,13 @@ export default {
 .app-nav-bar {
   width: 100%;
   height: $navbar-height;
-  background-color: $navbar-background;
   display: flex;
   align-items: center;
-
   .logo.js-min-logo {
     width: 64px;
     font-size: 16px;
     color: #fff;
   }
-
   .nav-content {
     flex: 1;
     height: 100%;
@@ -50,7 +51,6 @@ export default {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: $navbar-padding;
-
     .right-info {
       display: flex;
       align-items: center;

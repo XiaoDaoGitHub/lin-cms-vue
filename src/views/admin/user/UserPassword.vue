@@ -10,6 +10,7 @@
       label-width="100px">
       <el-form-item label="密码" prop="new_password">
         <el-input
+          size="medium"
           clearable
           type="password"
           v-model="form.new_password"
@@ -17,14 +18,15 @@
       </el-form-item>
       <el-form-item label="确认密码" prop="confirm_password" label-position="top">
         <el-input
+          size="medium"
           clearable
           type="password"
           v-model="form.confirm_password"
           autocomplete="off"></el-input>
       </el-form-item>
       <el-form-item v-show="false">
-        <l-button type="primary" @click="submitForm('form')">保存</l-button>
-        <l-button @click="resetForm('form')">取消</l-button>
+        <el-button type="primary" @click="submitForm('form')">保存</el-button>
+        <el-button @click="resetForm('form')">取消</el-button>
       </el-form-item>
     </el-form>
   </div>
